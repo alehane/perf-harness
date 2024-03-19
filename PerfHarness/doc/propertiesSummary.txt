@@ -405,6 +405,11 @@ jc	 WMQ Channel to connect to (not used if ccdt is specified).
 bt	 WMQ trust level
 	 Type = java.lang.String (default:  std)
        "std" is standard (default), "fp" is fastpath, "is" is isolated.
+jconn Connection list, use as an alternative to jc, jp, h2 and p2 properties,
+     for example, this can be set to "hostname1(1421),HOSTNAME2(1422)" for
+     IBMMQ.
+     Type = java.lang.String (default:  )
+
 
 +---------------------------------------------------------------------------------------------------------------------------------+
 
