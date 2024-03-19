@@ -142,7 +142,7 @@ public class WebSphereMQ extends JNDI implements JMSProvider {
 
                String connectionString = Config.parms.getString("jconn");
 
-               if (connectionString != null) {
+               if (connectionString != null && connectionString.length() > 1) {
                    cf.setConnectionNameList(connectionString);
                } else {
                    cf.setHostName(Config.parms.getString("jh"));
